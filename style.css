@@ -100,7 +100,7 @@ body{
     width: 100%
 }
 
-.caracteristicas ul li .feature-text {
+.caracteristicas ul li .feature-text{
     background: #6b6b6b;
     color: #fff;
     height: 100%;
@@ -139,6 +139,7 @@ body{
         margin-bottom: 10px
     }
 }
+
 /* Rodapé */
 footer {
     text-align: center;
