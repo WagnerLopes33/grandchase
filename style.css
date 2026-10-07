@@ -61,12 +61,9 @@ body{
 }
 
 .boxstyle-feature {
-    border-radius: 10px;
-    box-shadow: 0 0 5px 2px #00000080
-}
-
-.boxstyle-feature img {
-    vertical-align: middle;
+    border-radius: 30px;
+    box-shadow: 0px 2px 5px 2px #00000080;
+    border: 2px solid gray;    
 }
 
 .caracter-title{
@@ -80,13 +77,14 @@ body{
     background: #6b6b6b;
     color: #fff;
     height: 100%;
-    padding: 20px;
+    padding: 30px;
+
 }
 
 .caracteristicas ul {
     align-items: top;
     display: flex;
-    justify-content: space-between
+    justify-content: space-around;
 }
 
 .caracteristicas ul li{
@@ -95,16 +93,14 @@ body{
     justify-content: space-between
 }
 
-.caracteristicas ul li img{
-    vertical-align: middle;
-    width: 100%
-}
-
 .caracteristicas ul li .feature-text{
     background: #6b6b6b;
     color: #fff;
     height: 100%;
-    padding: 20px
+    padding: 8px;
+    border-radius: 30px;
+    box-shadow: 0px 2px 5px 2px #00000080;
+    border: 2px solid gray; 
 }
 
 .caracteristicas ul li .feature-text .feature-tit{
@@ -115,29 +111,6 @@ body{
 
 .caracteristicas ul li .feature-text .featurett1{
     color: #d0d5dd
-}
-@media (max-width: 960px) {
-    .caracteristicas {
-        margin-top:40px
-    }
-}
-@media (max-width: 640px) {
-    .caracteristicas ul {
-        flex-direction:column
-    }
-
-    .caracteristicas ul li {
-        margin: 10px 0;
-        width: 100%
-    }
-    .caracteristicas ul li .feature-text {
-        padding: 10px
-    }
-
-    .caracteristicas ul li .feature-text .feature-tit {
-        font-size: 14px;
-        margin-bottom: 10px
-    }
 }
 
 /* Rodapé */
