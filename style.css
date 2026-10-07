@@ -55,6 +55,9 @@ h1 {
     display: flex;
     justify-content: center;
 }
+.banner-principal img{
+    border-radius: 30px;
+}
 
 body{
     background-color: #2c2c2c ;
@@ -107,10 +110,15 @@ body{
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 .caracteristicas ul li .feature-text .featurett1{
     color: #d0d5dd
+}
+
+.caracteristicas ul li .feature-text img{
+    border-radius: 30px;
 }
 
 /* Rodapé */
