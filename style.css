@@ -31,6 +31,7 @@ header {
 
 .nav-links a:hover {
     color: #ffcc00;
+    font-size: 20px;
 }
 
 .logo{
@@ -174,6 +175,9 @@ tr:nth-child(even) {
 }
 .lass{
     color:#6DB8EE;
+}
+.ryan{
+    color: #5CC190;
 }
 /*RODAPÉ*/
 footer {
