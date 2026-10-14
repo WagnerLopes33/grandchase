@@ -27,8 +27,65 @@
         <img src="./assets/logo-gc.png" alt="">
         </div>
     </header>
-    <main>
-        <h1>Comunidade</h1>
+    <main class="formulario-comunidade">
+        <h1 class="titulo-comunidade">Comunidade</h1>
+        <p>Quer fazer parte da nossa comunidade? Preencha o formulário que vamos entrar em contato para te incluir em uma de nossas comunidades!</p>
+        <section class="info-comunidade">
+            <h3>Por que fazer parte da nossa Guilda / Comunidade de Grand Chase?</h3>
+            
+            <ol id="beneficios-lista" class="beneficios-ol">
+                <li><strong>Encontre Partidas Facilmente:</strong> Monte PTs para Portão Dimensional, Torre da Extinção e Raids difíceis sem stress.</li>
+                <li><strong>Builds e Guias Atualizados:</strong> Acesso a tutoriais de Árvore de Talentos, Cartas, Propriedades e Equipamentos para todos os personagens.</li>
+                <li><strong>Treinos e Torneios PvP:</strong> Participe de salas personalizadas, campeonatos de PvP e melhore suas habilidades de Spell, Combo e Dash.</li>
+                <li><strong>Trocas e Ajuda em Missões:</strong> Dicas para farmar GP, Fragmentos de Visual e ajuda com missões de evolução/troca de classe.</li>
+                <li><strong>Sorteios de Cash e Eventos:</strong> Participe de eventos exclusivos da comunidade com premiações e sorteios de VP/Cash.</li>
+            </ol>
+        </section>
+        <form action="">
+            <label for="nome">Nome e Sobrenome:</label>
+            <input type="text" id="nome" class="input-padrao" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" class="input-padrao" required placeholder="(99)99999-9999">
+
+            <label for="nickname">Nickname:</label>
+            <input type="text" id="nickname" class="input-padrao" required placeholder="Seu nome no jogo">
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea name="" id="mensagem" cols="68" rows="10"></textarea>
+
+            <fieldset>
+                <legend>Prefere fazer parte de qual dessas comunidades?</legend>
+                    <label for="radio-email"><input type="radio" name="contato" id="radio-email">Telegram</label>
+                    
+                    <label for="radio-telefone"><input type="radio" name="contato" id="radio-telefone">Reedit</label>
+                    
+                    <label for="radio-whatsapp"><input type="radio" name="contato" id="radio-whatsapp">Whatsapp</label>
+
+                    <label for="radio-discord"><input type="radio" name="contato" id="radio-discord">Discord</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Qual é o seu conhecimento de jogo?<legend>
+                    <select name="" id="">
+                        <option value="">Iniciante</option>
+                        <option value="">Intermediário</option>
+                        <option value="">Avançado</option>
+                    </select>
+            </fieldset>
+
+            <label for="checkbox" class="checkbox">
+                <input type="checkbox" name="" id="checkbox" >Gostaria de receber nossas novidades por e-mail?
+            </label>
+            
+
+            <input type="submit" value="Enviar" class="enviar">
+
+
+        </form>
     </main>
     <footer>
         <p>Projeto de Atividade Escolar - Fan Page Grand Chase</p>

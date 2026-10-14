@@ -140,7 +140,7 @@ body{
     margin-top: 40px;
 }
 .personagens-e-classes{
-    color: white;
+    color: antiquewhite;
     font-family: 'Isometra', serif;
     font-size: 40px;
 }
@@ -202,6 +202,10 @@ tr img {
     margin-left: auto;
     margin-bottom: 8px;
 }
+.personagens-main{
+    width: 940px;
+    margin: 0 auto;
+}
 /*RODAPÉ*/
 footer {
     text-align: center;
@@ -211,4 +215,125 @@ footer {
     border-top: 1px solid #ffcc00;
     margin-top: 2rem;
     box-shadow: 0px 4px 10px rgba(255, 204, 0, 0.3);
+}
+/*formulario*/
+.titulo-comunidade{
+    text-align: center;
+    color: antiquewhite;
+    font-size: 80px;
+    font-family: 'Isometra', serif;
+    margin: 20px 0px
+}
+.formulario-comunidade{
+    width: 940px;
+    margin: 0 auto;
+}
+
+form label, form legend{
+display: block;
+font-size: 20px;
+margin: 0 0 10px 0;
+color: #d0d5dd;
+font-weight: bolder;
+}
+
+.input-padrao{
+    display: block;
+    margin: 0 0 20px 0;
+    padding: 10px 25px;
+    width: 60%;
+    background-color: darkorange;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    background-color: orange;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: bolder;
+    transition: 0.8s;
+}
+
+.enviar:hover{
+    background-color: darkorange;
+}
+
+fieldset{
+    border: 1px solid darkorange;
+    margin: 10px 0;
+}
+form select, form option{
+    border: 1px solid darkorange;
+}
+.formulario-comunidade p{
+    color:#d0d5dd;
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+/*LISTA ORDENADA*/
+.info-comunidade h3{
+    text-align: center;
+    color: antiquewhite;
+    font-size: 15px;
+    font-family: 'Isometra', serif;
+    margin: 20px 0px
+}
+.beneficios-ol {
+    list-style: none; /* Remove a numeração padrão */
+    counter-reset: gc-contador;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.beneficios-ol li {
+    position: relative;
+    counter-increment: gc-contador;
+    background: #1e192b;
+    color: #e2d9f3;
+    margin-bottom: 12px;
+    padding: 16px 16px 16px 55px;
+    border-radius: 8px;
+    border-left: 4px solid darkorange;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    font-size: 0.95rem;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Círculo do número do item */
+.beneficios-ol li::before {
+    content: counter(gc-contador);
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(135deg, orange, darkorange); /* Gradiente roxo/azul */
+    color: #fff;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    box-shadow: 0 0 8px rgba(168, 85, 247, 0.6);
+}
+
+/* Efeito ao passar o mouse */
+.beneficios-ol li:hover {
+    transform: translateX(8px);
+    background: #2a223d;
+    border-left-color: #38bdf8; /* Muda para um azul brilhante */
+}
+
+.beneficios-ol li strong {
+    color: #38bdf8; /* Destaque nos títulos dos itens */
 }
