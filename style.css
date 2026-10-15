@@ -143,24 +143,27 @@ body{
     color: antiquewhite;
     font-family: 'Isometra', serif;
     font-size: 40px;
+    text-align: center;
+    margin: 20px;
 }
 /*TABELA*/
-table {
-    width: 100%;
+.tabela-personagens {
     border-collapse: collapse;
     font-family: Arial, sans-serif;
-    margin: 20px 0;
+    width: 940px;
+    margin: 0 auto;
 }
 th, td {
     border: 2px solid #ccc;
     padding: 10px;
     text-align: center;
+    font-weight: bolder;
 
 }
 th {
     background-color: #404356;
     font-weight: bold;
-    color: white;
+    color: #38bdf8;
 }
 tr:nth-child(even) {
     background-color: #21242D; /* Deixa as linhas alternadas com fundo cinza claro */
@@ -203,8 +206,17 @@ tr img {
     margin-bottom: 8px;
 }
 .personagens-main{
-    width: 940px;
-    margin: 0 auto;
+    background-image: linear-gradient(
+        rgba(15, 12, 23, 0.70), 
+        rgba(15, 12, 23, 0.70)
+    ), url('./assets/background-personagens.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 40px;
+    border-radius: 12px;
 }
 /*RODAPÉ*/
 footer {
@@ -213,7 +225,7 @@ footer {
     color: #777;
     font-size: 0.9rem;
     border-top: 1px solid #ffcc00;
-    margin-top: 2rem;
+    margin-top: 1rem;
     box-shadow: 0px 4px 10px rgba(255, 204, 0, 0.3);
 }
 /*formulario*/
@@ -258,11 +270,11 @@ font-weight: bolder;
     font-size: 18px;
     border-radius: 5px;
     font-weight: bolder;
-    transition: 0.8s;
+    transition: 0.5s;
 }
 
 .enviar:hover{
-    background-color: darkorange;
+    background-color: #38bdf8;
 }
 
 fieldset{
@@ -314,7 +326,7 @@ form select, form option{
     left: 14px;
     top: 50%;
     transform: translateY(-50%);
-    background: linear-gradient(135deg, orange, darkorange); /* Gradiente roxo/azul */
+    background: linear-gradient(135deg, orange, #38bdf8);
     color: #fff;
     width: 28px;
     height: 28px;
@@ -336,4 +348,7 @@ form select, form option{
 
 .beneficios-ol li strong {
     color: #38bdf8; /* Destaque nos títulos dos itens */
+}
+.comunidade-background{
+    display: flex;
 }
