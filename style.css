@@ -291,12 +291,19 @@ form select, form option{
 }
 
 /*LISTA ORDENADA*/
-.info-comunidade h3{
+h3{
     text-align: center;
     color: antiquewhite;
     font-size: 15px;
     font-family: 'Isometra', serif;
-    margin: 20px 0px
+    margin: 50px 0px 20px 0px
+}
+.info-comunidade{
+    display: flex;
+}
+
+.info-comunidade img{
+    margin: 10px 30px;
 }
 .beneficios-ol {
     list-style: none; /* Remove a numeração padrão */
@@ -348,7 +355,4 @@ form select, form option{
 
 .beneficios-ol li strong {
     color: #38bdf8; /* Destaque nos títulos dos itens */
-}
-.comunidade-background{
-    display: flex;
 }
