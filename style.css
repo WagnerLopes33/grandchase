@@ -168,6 +168,11 @@ body{
     margin: 30px 0;
 }
 /*TABELA*/
+.tabela-container {/* Cria rolagem horizontal caso a tabela seja muito larga para a tela do celular */
+    width: 100%;
+    overflow-x: auto;
+    padding: 0 10px;
+}
 .tabela-personagens {
     border-collapse: collapse;
     font-family: Arial, sans-serif;
@@ -232,7 +237,7 @@ footer {
 .titulo-comunidade{
     text-align: center;
     color: antiquewhite;
-    font-size: 80px;
+    font-size: clamp(40px, 8vw, 80px);
     font-family: 'Isometra', serif;
     margin: 20px 0px
 }
