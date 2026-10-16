@@ -242,8 +242,10 @@ footer {
     margin: 20px 0px
 }
 .formulario-comunidade{
-    width: 940px;
+    width: 100%;
+    max-width: 940px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 form label, form legend{
@@ -258,7 +260,8 @@ font-weight: bolder;
     display: block;
     margin: 0 0 20px 0;
     padding: 10px 25px;
-    width: 60%;
+    width: 100%;
+    max-width: 600px;
     background-color: darkorange;
 }
 
@@ -267,7 +270,8 @@ font-weight: bolder;
 }
 
 .enviar{
-    width: 40%;
+    width: 100%;
+    max-width: 300px;
     padding: 15px 0;
     background-color: orange;
     border: none;
@@ -276,6 +280,7 @@ font-weight: bolder;
     border-radius: 5px;
     font-weight: bolder;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .enviar:hover{
@@ -285,9 +290,11 @@ font-weight: bolder;
 fieldset{
     border: 1px solid darkorange;
     margin: 10px 0;
+    padding: 15px;
 }
 form select, form option{
     border: 1px solid darkorange;
+    max-width: 100%;
 }
 .formulario-comunidade p{
     color:#d0d5dd;
@@ -305,10 +312,14 @@ h3{
 }
 .info-comunidade{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .info-comunidade img{
     margin: 10px 30px;
+    max-width: 100%;
+    height: auto;
 }
 .beneficios-ol {
     list-style: none; /* Remove a numeração padrão */
@@ -337,7 +348,7 @@ h3{
     position: absolute;
     left: 14px;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-45%);
     background: linear-gradient(135deg, orange, #38bdf8);
     color: #fff;
     width: 28px;
