@@ -312,7 +312,6 @@ h3{
 }
 .info-comunidade{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -320,6 +319,7 @@ h3{
     margin: 10px 30px;
     max-width: 100%;
     height: auto;
+    max-height: 400px;
 }
 .beneficios-ol {
     list-style: none; /* Remove a numeração padrão */
