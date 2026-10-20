@@ -171,7 +171,8 @@ body{
 .tabela-container {/* Cria rolagem horizontal caso a tabela seja muito larga para a tela do celular */
     width: 100%;
     overflow-x: auto;
-    padding: 0 10px;
+    overflow-y: visible; /* Garante que o balão não seja cortado verticalmente */
+    padding: 100px 10px;  /* Adiciona um respiro em cima para o balão não colar no cabeçalho */
 }
 .tabela-personagens {
     border-collapse: collapse;
@@ -182,7 +183,7 @@ body{
 }
 th, td {
     border: 2px solid #ccc;
-    padding: 10px;
+    padding: 10px 10px 40px 10px;
     text-align: center;
     font-weight: bolder;
 
@@ -206,9 +207,9 @@ tr:nth-child(even) {
 .sieghart{color: #959795;}
 .dio{color: #D26792;}
 
-tr img {
+tr img{
     display: block;
-    margin: 0 auto 8px auto;
+    margin: 0px auto 20px auto;
 }
 .personagens-main{
     background-image: linear-gradient(
@@ -313,6 +314,7 @@ h3{
 .info-comunidade{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .info-comunidade img{
@@ -320,6 +322,7 @@ h3{
     max-width: 100%;
     height: auto;
     max-height: 400px;
+    display: block;
 }
 .beneficios-ol {
     list-style: none; /* Remove a numeração padrão */
@@ -371,6 +374,69 @@ h3{
 
 .beneficios-ol li strong {
     color: #38bdf8; /* Destaque nos títulos dos itens */
+}
+
+/* Container que engloba o ícone e serve de referência para o balão */
+.icone-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Esconde o balão por padrão e define seu visual/posição */
+.balao-hover {
+    display: none; /* Inicia oculto */
+    position: absolute;
+    bottom: 125%; /* Posição acima do ícone */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza em relação ao ícone */
+    
+    /* Estilização do balão */
+    background-color: #1a1a2e;
+    border: 2px solid #ffcc00;
+    border-radius: 8px;
+    padding: 6px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.6);
+    z-index: 100; /* Garante que o balão fique por cima de outros elementos */
+}
+
+/* Imagem que vai dentro do balão */
+.balao-hover img {
+    max-width: 150px; /* Ajuste o tamanho da imagem interna conforme necessário */
+    height: auto;
+    border-radius: 4px;
+    margin: 0;
+}
+
+/* Criando a "setinha" apontada para baixo na base do balão */
+.balao-hover::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* Fica no fundo do balão */
+    left: 50%;
+    margin-left: -6px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #ffcc00 transparent transparent transparent;
+}
+
+/* Ação de HOVER: mostra o balão quando passar o mouse pelo container */
+.icone-container:hover .balao-hover {
+    display: block;
+    animation: fadeIn 0.2s ease-in-out;
+}
+
+/* Animação suave para surgir o balão */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, 5px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
 }
 /* MEDIA QUERY PARA CELULARES PEQUENOS (Abaixo de 600px) */
 @media (max-width: 600px) {
